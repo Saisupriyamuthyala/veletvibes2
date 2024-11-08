@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velvetvibes - Aesthetic Cosmetic Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Velvetvibes</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="file:///E:/Apex/task1/velvetvibes.html">Home</a></li>
+                <li><a href="E:/Apex/products/products.html">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="container">
+        <section id="home" class="hero">
+            <h2>Discover the Best of Cosmetics</h2>
+            <p>Your beauty, our priority. Explore a range of premium products.</p>
+        </section>
+        <section id="gallery">
+            <h2>Cosmetic Gallery</h2>
+            <p>"Couldn't find the product you were looking for? Let us know! We're here to enhance your beauty routine with custom selections just for you."</p>
+            <p>"Choose your favorite product and add it to the gallery!"</p>
+            <div id="cosmeticImages">
+                <div class="cosmetic-image" style="background-image: url('https://i.pinimg.com/564x/ed/65/24/ed65240f3c8ccd0041ba7eea67a24b0e.jpg');" title="Lipstick Collection"></div>
+                <div class="cosmetic-image" style="background-image: url('https://i.pinimg.com/564x/e9/ab/6b/e9ab6bddd0d872c30933c0ec4811499b.jpg');" title="Eye Shadow Palette"></div>
+                <div class="cosmetic-image" style="background-image: url('https://i.pinimg.com/564x/5d/6a/c2/5d6ac2398f220ff37220b428a38a2790.jpg');" title="Foundation"></div>
+                <div class="cosmetic-image" style="background-image: url('https://i.pinimg.com/564x/3b/45/ba/3b45ba8ac08daab9ff673d01f6e69654.jpg');" title="Perfume Collection"></div>
+                <div class="cosmetic-image" style="background-image: url('https://i.pinimg.com/564x/be/90/94/be90947d7950225074cf2855b7ba6c35.jpg');" title="Skin essentials"></div>
+            </div>
+            <input type="text" id="imageUrl" placeholder="Add Product Image URL">
+            <button id="addImage">Add Product</button>
+        </section>
+        
+        
+        
+        
+        <section id="contact" class="contact-form">
+            <h2>Contact Us</h2>
+            <form id="contactForm" onsubmit="return validateForm()">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
